@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
 # Variable que guarda la URL de conexión a PostgreSQL
-DATABASE_URL = os.getenv("postgresql://postgres:PfUfgRjRPLXmPPwSMnhyOyyBJiqkCOGw@postgres.railway.internal:5432/railway")
+DATABASE_URL = os.getenv("DATABASE_URL")
 
 if not DATABASE_URL:
     raise ValueError("La variable de entorno DATABASE_URL no está definida")
