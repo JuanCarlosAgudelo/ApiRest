@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
 # Variable que guarda la URL de conexión a PostgreSQL
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:123@localhost/servrest_db")
+DATABASE_URL = os.getenv("postgresql://postgres:PfUfgRjRPLXmPPwSMnhyOyyBJiqkCOGw@postgres.railway.internal:5432/railway")
 
 # Objeto de tipo SQLalchemy que utiliza como parametro la url para realizar la conexion a la db
 engine = create_engine(DATABASE_URL)
